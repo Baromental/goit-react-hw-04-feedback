@@ -24,7 +24,7 @@ const Feedback = () => {
 
   useEffect(() => {
     document.title = `Feedback App - Total: ${countTotalFeedback()}`;
-  }, [feedback]);
+  }, [countTotalFeedback]);
 
   const total = countTotalFeedback();
   const positivePercentage = countPositiveFeedbackPercentage();
